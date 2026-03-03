@@ -261,11 +261,11 @@ function HeroSection() {
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.7, delay: 0.5 }}
-            className="text-lg sm:text-xl text-muted-foreground max-w-xl leading-relaxed mb-10 font-body"
+            className="text-lg sm:text-xl text-foreground/80 max-w-xl leading-relaxed mb-10 font-body drop-shadow-[0_1px_6px_rgba(0,0,0,0.8)]"
           >
             Gamer's Grub — Kolkata's premier gaming café. PC, PS5, racing
             simulators &amp; game rentals.{" "}
-            <span className="text-foreground/80 font-medium">Come play.</span>
+            <span className="text-white font-semibold">Come play.</span>
           </motion.p>
 
           {/* CTA */}
@@ -368,7 +368,7 @@ function ServicesSection() {
     <section
       id="services"
       data-ocid="services.section"
-      className="py-24 lg:py-32 relative overflow-hidden"
+      className="py-24 lg:py-32 relative overflow-hidden bg-background"
     >
       {/* Background accent */}
       <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_50%_0%,oklch(0.65_0.28_290/0.06)_0%,transparent_70%)]" />
@@ -548,7 +548,7 @@ function PricingSection() {
     <section
       id="pricing"
       data-ocid="pricing.section"
-      className="py-24 lg:py-32 relative overflow-hidden"
+      className="py-24 lg:py-32 relative overflow-hidden bg-background"
     >
       <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_50%_100%,oklch(0.75_0.22_200/0.05)_0%,transparent_70%)]" />
 
@@ -749,7 +749,7 @@ function ContactSection() {
     <section
       id="contact"
       data-ocid="contact.section"
-      className="py-24 lg:py-32 relative overflow-hidden"
+      className="py-24 lg:py-32 relative overflow-hidden bg-background"
     >
       {/* Background */}
       <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_30%_50%,oklch(0.65_0.28_290/0.07)_0%,transparent_60%)]" />
@@ -1076,7 +1076,7 @@ export default function App() {
     >
       <Toaster position="bottom-right" theme="dark" />
       <Navbar />
-      <main>
+      <main className="bg-background">
         <HeroSection />
         <ServicesSection />
         <PricingSection />

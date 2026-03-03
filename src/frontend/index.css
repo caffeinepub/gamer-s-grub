@@ -161,6 +161,7 @@
     box-shadow: var(--glow-cyan);
   }
   .card-glass {
+    background-color: oklch(0.11 0.018 285);
     background: var(--card-glass);
     backdrop-filter: blur(12px);
     -webkit-backdrop-filter: blur(12px);
